@@ -24,6 +24,7 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/ftmmovieworldof
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002249464432').split()]                                         DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ftmserver:ftmserver@cluster0.fneio.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "ftmbot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ftm:ftm@ftmbot.z5iox.mongodb.net/?retryWrites=true&w=majority&appName=ftmbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002152815615'))
 QR_CODE = environ.get('QR_CODE', 'https://telegra.ph/file/d1f7812a3d36a179381e5.jpg')
