@@ -21,8 +21,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 USERNAME = environ.get('USERNAME', "https://telegram.me/streamherokubot")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002152815615'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/ftmmovieworldofficial')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002249464432').split()]                                         DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ftmserver:ftmserver@cluster0.fneio.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002249464432').split()]                                         
 DATABASE_NAME = environ.get('DATABASE_NAME', "ftmbot")
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ftm:ftm@ftmbot.z5iox.mongodb.net/?retryWrites=true&w=majority&appName=ftmbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
