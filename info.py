@@ -13,19 +13,19 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '13786499'))
-API_HASH = environ.get('API_HASH', '429c3423fba4cac53c02b8da777e93a8')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7221966418:AAF-kyv5iXmA1LUu7yJbxLf7-vGLL6hG8hU')
+API_ID = int(environ.get('API_ID', '28776072'))
+API_HASH = environ.get('API_HASH', 'b3a786dce1f4e7d56674b7cadfde3c9d')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7518591171:AAE2zsNHKD5KLY1RwE_tHti02hzN8x_dFUc')
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7113960085').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/ftmmoviesworldbot")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002245325869'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/ftmmovieworld')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7042535787').split()]
+USERNAME = environ.get('USERNAME', "https://telegram.me/streamherokubot")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002152815615'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/ftmmovieworldofficial')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002249464432').split()]                                         DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ftmserver:ftmserver@cluster0.fneio.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "ftmbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002199200593'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002152815615'))
 QR_CODE = environ.get('QR_CODE', 'https://telegra.ph/file/d1f7812a3d36a179381e5.jpg')
 START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/3b79df5c0b4ed3286c2f5.jpg')
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002202589261'))
@@ -34,7 +34,7 @@ URL = environ.get('URL', 'https://ftmmoviesbotworld.onrender.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002245325869'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002152815615'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Movie_Url_link_downloader/17")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/3b79df5c0b4ed3286c2f5.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "xR5LVEpiKZTcgBzZGrwFXdohjGN2")
@@ -52,10 +52,10 @@ YEARS = [f'{i}' for i in range(2024 , 1982,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 99)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 60
-auth_channel = environ.get('AUTH_CHANNEL', '-1002201250868')                                                                                              AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002059449771'))                                                                                       request_channel = environ.get('REQUEST_CHANNEL', '-1002059449771')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002152815615')                                                                                              AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002160186636'))                                                                                       request_channel = environ.get('REQUEST_CHANNEL', '-1002059449771')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002242792451'))                                                                                         MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002059449771'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002152815615'))                                                                                         MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002059449771'))
 
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '5000')
