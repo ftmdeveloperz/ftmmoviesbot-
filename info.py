@@ -13,9 +13,9 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '28776072'))
-API_HASH = environ.get('API_HASH', 'b3a786dce1f4e7d56674b7cadfde3c9d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7518591171:AAE2zsNHKD5KLY1RwE_tHti02hzN8x_dFUc')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7042535787').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/streamherokubot")
@@ -33,7 +33,7 @@ DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002247818920'))
 URL = environ.get('URL', 'https://ftmmoviesbotworld.onrender.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002152815615'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Movie_Url_link_downloader/17")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/3b79df5c0b4ed3286c2f5.jpg")
